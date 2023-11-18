@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  color: black;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-right: 10px;
+}
+.nav ul li {
+  transition: ease-in .2s;
+}
+a {
+  
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.nav ul li:hover {
+  scale: 1.2;
+}
+
+a:active {
+  color: rgb(194, 8, 201);
+  transition: 0.8s;
+  filter: blur(0px);
+}
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+span {
+  color: rgb(194, 8, 201);
+}
+section {
+  min-height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 189, 199, 0.916) 60%,
+    rgb(113, 113, 239)
+  );
+}
+#home {
+  display: flex;
+  justify-content: space-around;
+}
+.page1 {
+  height: 400px;
+}
+.homebox1 {
+  height: 80vh;
+  width: 48%;
+  font-size: 2.1rem;
+  margin-top: 20px;
+  margin-left: 100px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  padding: 70px 40px;
+  /* border:2px solid red; */
+}
+.homebox2 {
+  height: 80vh;
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  cursor: pointer;
+  width: 150px;
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all ease-in-out 0.3s;
+  background-color: rgb(194, 8, 201);
+}
+.cv {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: inline-block;
+}
+.btn:hover {
+  background-color: rgb(194, 8, 201);
+  transform: scale(1);
+  box-shadow: 0 0 3em rgb(194, 8, 201);
+}
+.active {
+  display: inline-block;
+  color: rgb(194, 8, 201);
+  font-family: "Poppins", sans-serif;
+  transform: scale(1.2);
+}
+.links {
+  border-radius: 3px;
+  height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  height: 400px;
+  width: 350px;
+  position: relative;
+  animation-name: move;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+}
+.social {
+  display: flex;
+  /* border: 2px solid red; */
+  gap: 15px;
+  font-size: smaller;
+  max-width: 250px;
+  margin-top: 20px;
+}
+.social div a i,
+.social div a,
+.social div {
+  margin: 0;
+}
+
+.social-logo a i {
+  padding: 6px;
+  /* border: 2px solid black; */
+  transition: ease-in 0.2s;
+  border-radius: 50%;
+}
+.social-logo:nth-child(1) a i:hover {
+  background: #1da1f2;
+  color: white;
+  box-shadow: 0 0 2rem #1da1f2;
+}
+.social-logo:nth-child(2) a i:hover {
+  background: #0077b5;
+  color: white;
+  box-shadow: 0 0 2rem #0077b5;
+}
+.social-logo:nth-child(3) a i:hover {
+  background: #000;
+  color: white;
+  box-shadow: 0 0 2rem #000;
+}
+.social-logo:nth-child(4) a i:hover {
+  background: #2bb741;
+  box-shadow: 0 0 2rem #2bb741;
+  color: white;
+}
+#about {
+  display: flex;
+  justify-content: space-around;
+}
+.aboutbox1 {
+  height: 90vh;
+  width: 45%;
+}
+.about-image {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+.aboutbox2 {
+  height: 90vh;
+  width: 45%;
+}
+.box {
+  margin-top: 30px;
+  /* border:2px solid red; */
+  width: 80%;
+}
+#aboutbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+ width: 97%;
+}
+.homebox2 img {
+  transition: ease-in 0.3s;
+}
+.aboutbox1 img {
+  transition: ease-in 0.3s;
+}
+#project {
+  /* border: 2px solid black; */
+  flex-wrap: wrap;
+  align-items: start;
+  padding: 4%;
+  justify-content: flex-start;
+  gap: 20px;
+}
+#project .proj-div {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  border: 2px solid rgb(194, 8, 201);
+  box-shadow: 0 0 1rem black;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+#project .proj-div div button{
+    padding: 5px;
+    text-align: center;
+    background: rgb(113, 113, 239);
+}
+.homebox2 img:hover,
+.aboutbox1 img:hover {
+  scale: 1.15;
+}
+.desc {
+font-size: 15px;
+}
+.Aboutskill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 550px;
+}
+.Aboutskill div {
+  border: 2px solid rgb(194, 8, 201);
+  border-radius: 10px;
+  padding: 5px 30px;
+  box-shadow: 0 0 1rem black;
+}
+.sbox {
+  border: 2px solid rgb(194, 8, 201);
+  min-height: 250px;
+  width: 300px;
+  padding: 10px 0;
+  box-shadow: 0 0 2rem black;
+  border-radius: 10px;
+}
+#service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.slogo {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  color: rgb(194, 8, 201);
+}
+.sbox h2 {
+  display: flex;
+  justify-content: center;
+}
+#sbox1 p,
+#sbox2 p,
+#sbox3 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+.contact-container {
+  width: 60%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+input,
+textarea,
+button {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 7px;
+  margin: 0;
+}
+.contact-container h1 {
+  color: rgb(194, 8, 201);
+  border-radius: 8px;
+}
+.sec {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@keyframes move {
+  0%{
+   top:0px;
+   right:0px;
+  }  
+  100%{
+    top:50px;
+    right:50px;
+  }
+}
