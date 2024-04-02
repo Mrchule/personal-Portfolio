@@ -231,6 +231,9 @@ img {
   border-radius: 10px;
   padding: 10px 0;
 }
+.proj-div div{
+  text-align: center;
+}
 #project .proj-div div button{
     padding: 5px;
     text-align: center;
