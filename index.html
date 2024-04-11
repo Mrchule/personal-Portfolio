@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header  class="head">
+    <header class="head">
         <div class="logo">
             <h1>Port<span>folio.</span></h1>
         </div>
@@ -22,6 +23,9 @@
                 <li><a href="#service" class="links">Services</a></li>
                 <li><a href="#project" class="links">Project</a></li>
                 <li><a href="#contact" class="links">Contact</a></li>
+                <li> <a href="#" class="icon">
+                    <i class="fa fa-bars"></i>
+                  </a></li>
             </ul>
         </div>
     </header>
@@ -54,20 +58,23 @@
             </div>
         </div>
         <div class="homebox2">
-            <img src="Pro.png">
+            <img class="img" src="Pro.png" alt="poster">
         </div>
     </section>
     <section id="about" class="sec">
 
         <div class="aboutbox1">
-            <img class="about-image" src="image.png">
+            <img class="about-image img" src="image.png">
         </div>
         <div class="aboutbox2">
             <div id="aboutbox" class="box">
                 <h2>
                     <span>About</span>
                 </h2>
-                <p class="desc">I am a dedicated and aspiring student currently pursuing a Master's in Computer Applications (MCA). My passion for coding is evident, and I aspire to become a skilled software or web developer in the future. My academic background is impressive, having completed my Bachelor's degree in Computer Science with a remarkable 84% score.</p>
+                <p class="desc">I am a dedicated and aspiring student currently pursuing a Master's in Computer
+                    Applications (MCA). My passion for coding is evident, and I aspire to become a skilled software or
+                    web developer in the future. My academic background is impressive, having completed my Bachelor's
+                    degree in Computer Science with a remarkable 84% score.</p>
 
             </div>
             <div id="skillbox" class="box">
@@ -76,36 +83,44 @@
                 </h2>
                 <div class="Aboutskill">
                     <div>
-                        <h2>FRONT END</h2>
-                        <UL>
-                            <LI>HTML</LI>
-                            <LI>CSS</LI>
-                            <LI>JAVASCRIPT</LI>
-                        </UL>
+                        <h2>FRONT-END</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Bootstrap</li>
+                            <li>JAVASCRIPT</li>
+                            <li>ReactJs</li>
+                        </ul>
                     </div>
                     <div>
-                        <H2>PROGRAMMING </H2>
-                        <UL>
+                        <h2>BACK-END</h2>
+                        <ul>
+                            <li>NodeJs</li>
+                            <li>Express</li>
+                            <li>Djangoo</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>PROGRAMMING </h2>
+                        <ul>
                             <li>C</li>
                             <li>CORE JAVA</li>
                             <li>PYTHON </li>
-                        </UL>
+                        </ul>
                     </div>
-                    <DIV>
-                        <H2>DATABASE</H2>
-                        <UL>
-                            <LI>MySQL </LI>
-                        </UL>
-                    </DIV>
-                    <DIV>
-                        <H2>Framework And libraries</H2>
-                        <UL>
-                            <li>Django</li>
-                            <li>bootstrap</li>
-                            <LI>React js</LI>
-
-                        </UL>
-                    </DIV>
+                    <div>
+                        <h2>DATABASE</h2>
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <H2>Additional</H2>
+                        <ul>
+                            <li>Git</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -115,8 +130,6 @@
     </section>
 
     <section id="service" class="sec">
-
-
 
         <div id="sbox1" class="sbox">
 
@@ -150,30 +163,6 @@
     </section>
 
     <section id="project" class="sec">
-
-        <div class="proj-div">
-            <div>
-                <h2>IMDB Clone</h2>
-            </div>
-            <div>Our IMDb clone, crafted with HTML, CSS, and JavaScript, presents a user-friendly interface for discovering and evaluating movies. Offering detailed listings, intuitive search, and responsive design, it ensures an immersive experience. Dynamic updates and personalized profiles enhance engagement, while plans for authentication and social features aim to enrich the platform further.</div>
-            <div><button ><a href="https://github.com/Mrchule">Click here</a></button></div>
-        </div>
-        <div class="proj-div">
-            <div>
-                <h2>Food Receipe</h2>
-            </div>
-            <div>"Crafted with HTML, CSS, and JavaScript, our food recipe app revolutionizes culinary exploration. With its enticing array of recipes, seamless search functionality, and adaptive design, it tantalizes taste buds across all devices. Dynamic updates and tailored profiles intensify user interaction, while forthcoming authentication and social integrations promise an even more immersive culinary journey.!"</div>
-            <div><button ><a href="https://github.com/Mrchule">Click here</a></button></div>
-        </div>
-        <div class="proj-div">
-            <div>
-                <h2>10+ Projects  </h2>
-            </div>
-            <div>I've developed a diverse range of projects using frontend tools alongside Java backend. From e-commerce platforms to task management apps, recipe sharing platforms, and social media dashboards, each project demonstrates my ability to create functional and engaging web applications. Whether it's weather forecasts, online banking systems, or real estate listings, I've utilized HTML, CSS, JavaScript, ReactJS, Angular, Vue.js, and Spring Boot to deliver efficient and user-friendly solutions."
-            </div>
-            <div><button ><a href="https://github.com/Mrchule">Click here</a></button></div>
-        </div>
-
     </section>
     <section id="contact" class="sec">
         <div class="contact-container">
@@ -188,8 +177,8 @@
         </div>
     </section>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script src="script.js"></script>
-    
+    <script src="script.js"></script>
+
 
 </body>
 
