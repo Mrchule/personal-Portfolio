@@ -210,6 +210,7 @@ p {
   justify-content: center;
   overflow: hidden;
   height: 100vh;
+  transition: all .2s ease;
 }
 #project .proj-div {
   height: 250px;
@@ -242,14 +243,24 @@ p {
 }
 #project .proj-div:hover {
   box-shadow: 0 0 1rem black;
-  scale: 1.032;
+  scale: 1.042;
 }
+#project .proj-div:hover
 .hed {
   overflow: hidden;
+  flex-grow: 1;
 }
 .proj-div div {
   text-align: center;
 }
+#project:hover .proj-div {
+  filter: blur(5px);
+}
+
+#project .proj-div:hover {
+  filter: none;
+}
+
 .para {
   text-align: justify;
   line-height: 1.1;
@@ -267,6 +278,9 @@ p {
   text-align: center;
   background: rgb(113, 113, 239);
   box-shadow: 0 0 1rem rgb(113, 113, 239);
+}
+.img-container{
+  object-fit: contain;
 }
 .homebox2 img:hover,
 .aboutbox1 img:hover {
@@ -302,7 +316,7 @@ p {
   border: 1px solid #000000af;
   min-height: 250px;
   width: 300px;
-  padding: 10px 0;
+  padding: 10px;
   border-radius: 10px;
   transition: all 0.2s linear;
   cursor: pointer;
@@ -418,6 +432,9 @@ button {
   form{
     width: 90%;
   }
+  .img-container{
+    width: 30%;
+   }
 }
 @media screen and (max-width: 768px) {
   .nav ul li .icon{

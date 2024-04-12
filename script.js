@@ -10,7 +10,7 @@ const movies = [
     link: "https://github.com/Mrchule/Swiggy-Clone-Frontend",
   },
   {
-    name: "FOOD recepi App",
+    name: "FOOD recipe App",
     path: "foodposter.webp",
     link: "https://github.com/Mrchule/Food-recipe-app",
   },
@@ -41,11 +41,13 @@ const project = document.querySelector("#project");
 movies.map((item) => {
   const proj = document.createElement("div");
   proj.classList.add("proj-div");
-  proj.innerHTML = `<div><img src="${item.path}" alt="imdbposter" height="150px" width="100%" style="border-radius:10px,  object-position: center;"></div>
-   <div class="hed">
-       <h2 class="headd">${item.name}</h2>
-   </div>
-   <div><button ><a href="${item.link}" target="_blank">Click Here</a></button></div>`;
+  proj.innerHTML = `<div class="img-container">
+                    <img src="${item.path}" alt="imdbposter" height="150px" width="100%" style="border-radius:10px,  object-position: center;">
+                    </div>
+                    <div class="hed">
+                        <h2 class="headd">${item.name}</h2>
+                    </div>
+                    <div class="btn-container"><button ><a href="${item.link}" target="_blank">View</a></button></div>`;
   project.appendChild(proj);
 });
 
