@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,7 +34,7 @@
         </div>
     </header>
     <section id="home" class="sec page1">
-        <div class="homebox1">
+        <div class="homebox1  wow animate__fadeInLeft">
             <div class="content">
                 <h3>Hey</h3>
                 <h1>I'M <span>CHULESWAR </span></h1>
@@ -57,16 +61,16 @@
                 </div>
             </div>
         </div>
-        <div class="homebox2">
+        <div class="homebox2 wow animate__animated animate__fadeInRight">
             <img class="img" src="Pro.png" alt="poster">
         </div>
     </section>
     <section id="about" class="sec">
 
-        <div class="aboutbox1">
+        <div class="aboutbox1 wow animate__fadeInLeft">
             <img class="about-image img" src="image.png">
         </div>
-        <div class="aboutbox2">
+        <div class="aboutbox2 wow animate__fadeInRight">
             <div id="aboutbox" class="box">
                 <h2>
                     <span>About</span>
@@ -131,7 +135,7 @@
 
     <section id="service" class="sec">
 
-        <div id="sbox1" class="sbox">
+        <div id="sbox1" class="sbox wow animate__slideInUp">
 
             <div class="slogo">
                 <i class="ri-html5-fill"></i>
@@ -142,7 +146,7 @@
             </p>
 
         </div>
-        <div id="sbox2" class="sbox">
+        <div id="sbox2" class="sbox wow animate__slideInUp">
             <div class="slogo">
                 <i class="ri-terminal-window-line"></i>
             </div>
@@ -152,7 +156,7 @@
             </p>
         </div>
       
-        <div id="sbox3" class="sbox">
+        <div id="sbox3" class="sbox wow animate__slideInUp">
             <div class="slogo">
                 <i class="ri-database-2-line"></i>
             </div>
@@ -161,14 +165,14 @@
                 Provide database management services using MySQL. Offer services such as database design, optimization
             </p>
         </div>
-        <div id="sbox4" class="sbox">
+        <div id="sbox4" class="sbox wow animate__slideInUp">
             <div class="slogo">
                 <i class="ri-quill-pen-fill"></i>
             </div>
             <h2>Graphic Design</h2>
             <p> I make design at the client's request, banner design, poster ,digital design among other</p>
         </div>
-        <div id="sbox5" class="sbox">
+        <div id="sbox5" class="sbox wow animate__slideInUp">
             <div class="slogo">
                 <i class="ri-window-fill"></i>
             </div>
@@ -183,17 +187,19 @@
         <div class="contact-container">
             <form id="contact-form">
                 <h1>GET IN TOUCH</h1>
-                <input type="text" id="name" placeholder="ENTER YOUR NAME" required><br>
-                <input type="email" id="email" placeholder="ENTER YOUR E-MAIL" required><br>
-                <input type="text" id="phone" placeholder="YOUR MOBILE NUMBER" required><br>
-                <textarea id="message" rows="4" placeholder="HOW CAN I HELP YOU?"></textarea><br>
-                <button class="btn" type="submit">Send</button>
+                <input type="text" id="name" class="wow animate__slideInDown" placeholder="ENTER YOUR NAME" required><br>
+                <input type="email" id="email" class="wow animate__slideInDown" placeholder="ENTER YOUR E-MAIL" required><br>
+                <input type="text" id="phone" class="wow animate__slideInDown" placeholder="YOUR MOBILE NUMBER" required><br>
+                <textarea id="message" rows="4" class="wow animate__slideInDown" placeholder="HOW CAN I HELP YOU?"></textarea><br>
+                <button class="btn" type="submit" class="wow animate__slideInDown">Send</button>
             </form>
         </div>
     </section>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
-
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
 

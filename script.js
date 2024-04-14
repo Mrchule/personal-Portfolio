@@ -41,6 +41,8 @@ const project = document.querySelector("#project");
 movies.map((item) => {
   const proj = document.createElement("div");
   proj.classList.add("proj-div");
+  proj.classList.add("wow");
+  proj.classList.add("animate__zoomIn");
   proj.innerHTML = `<div class="img-container">
                     <img src="${item.path}" alt="imdbposter" height="150px" width="100%" style="border-radius:10px,  object-position: center;">
                     </div>
