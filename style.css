@@ -26,14 +26,14 @@ header {
   padding: 20px;
   margin-right: 2rem;
 }
-.nav .ul{
+.nav .ul {
   display: flex;
-flex-direction: column;
-list-style: none;
-gap: 10px;
-justify-content: center;
-align-items: center;
-margin-right: 20px;
+  flex-direction: column;
+  list-style: none;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
 .nav ul li {
   transition: ease-in 0.2s;
@@ -52,7 +52,7 @@ a:active {
   transition: 0.8s;
   filter: blur(0px);
 }
-.nav ul li .icon{
+.nav ul li .icon {
   display: none;
 }
 .logo {
@@ -210,7 +210,7 @@ p {
   justify-content: center;
   overflow: hidden;
   height: 100vh;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 #project .proj-div {
   height: 250px;
@@ -239,14 +239,13 @@ p {
   padding: 5px 5px;
   transition: all 0.3s linear;
   cursor: pointer;
-  overflow:hidden;
+  overflow: hidden;
 }
 #project .proj-div:hover {
   box-shadow: 0 0 1rem black;
   scale: 1.042;
 }
-#project .proj-div:hover
-.hed {
+#project .proj-div:hover .hed {
   overflow: hidden;
   flex-grow: 1;
 }
@@ -279,7 +278,7 @@ p {
   background: rgb(113, 113, 239);
   box-shadow: 0 0 1rem rgb(113, 113, 239);
 }
-.img-container{
+.img-container {
   object-fit: contain;
 }
 .homebox2 img:hover,
@@ -419,31 +418,33 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   #home .homebox2,
   #about .aboutbox1 {
     display: none;
   }
+
   #home .homebox1,
   #about .aboutbox2 {
     width: 100%;
     margin-left: 20px;
   }
-  form{
+  form {
     width: 90%;
   }
-  .img-container{
+  .img-container {
     width: 30%;
-   }
+  }
 }
 @media screen and (max-width: 768px) {
-  .nav ul li .icon{
+  .nav ul li .icon {
     display: block;
-  } 
+  }
   .nav ul li:not(:last-child) {
     display: none;
   }
-  .nav .ul{
+  .nav .ul {
     display: block;
   }
 }
